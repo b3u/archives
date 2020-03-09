@@ -8,9 +8,6 @@
   },
   "author": "Binyamin Green",
   "license": "ISC",
-  "dependencies": {
-    "npm": "^6.2.0"
-  },
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
