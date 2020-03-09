@@ -22,7 +22,6 @@
 	<script defer src="js/main.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-	<script src="https://unpkg.com/jump.js@latest"></script>
 </head>
 <body>
 	<header class="navbar" id="navbar">
@@ -142,7 +141,8 @@
 			<p>© Copyright 2018 - 2019 by Binyamin Aron Green</p>
 		</main>
 	</footer>
-	<script>
+	<script type="module">
+		import jump from "./vendor/jump.js";
 		var link = document.querySelectorAll('.scroll');
 
 		link.forEach(element => {
