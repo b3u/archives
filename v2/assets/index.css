@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*variables*/
+:root {
+  --dark: #707070;
+  --light: #C7BC9D;
+  --galaxy: #466365;
+}
+* {
+  box-sizing:border-box;
+}
+html, body, nav, h1, h2, h3, h4, h5, h6, a, figure, figcaption{
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Top Navbar */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    background-color: var(--light);
+    height: 50px;
+    box-shadow: 0px 2px 8px 0px var(--dark);
+}
+.header-logo{
+    height: 36px;
+    float: left;
+    margin: 8px;
+}
+
+.menu {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 100vw;
+    max-height: 0;
+    background-color: white;
+    margin: auto;
+    overflow: hidden;
+    transition: max-height .5s ease-out;
+    z-index: 2;
+    box-shadow: -2px 2px 8px 0px var(--dark);
+}
+
+.responsive {
+  max-height: 50vh;
+  transition: max-height .5s ease-out;
+}
+
+nav a{
+  font-size: 1.5em;
+  padding: .5em;
+  display: block;
+  color: var(--dark);
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.menu a:hover, :focus {
+  background-color: var(--dark);
+  color: var(--light);
+  transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+}
+
+.icon {
+  float: right;
+  padding: 1rem;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+/*Splash section*/
+.splash{
+    height: 40vh;
+    background: url("../images/typewriter.jpg");
+    background-color: #C7BC9D;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.cta {
+      color: #333;
+  }
+.splash-title {
+    font-size: 10vw;
+    font-weight: normal;
+    text-align: center;
+   }
+
+.splash-subtitle{
+    font-size: 5vw;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  /*About Section*/
+  .about {
+    color: var(--dark);
+    overflow: hidden;
+    width: 100vw;
+    padding: 2em;
+  }
+
+  .about-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+    display: inline;
+    margin: 0 .5em;
+  }
+
+  .about-image {
+    width: 30%;
+    margin: 0 .5em;
+    margin-top: 2em;
+  }
+
+  .about-para{
+      text-align: justify;
+      margin-top: 2em;
+  }
+
+/*Portfolio Section*/
+  .work-header {
+    width: 100vw;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 2em;
+    text-align: center;
+    padding: .7em 0;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  .work-portfolio {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  figcaption {
+    display: none;
+  }
+  .work-item {
+    padding: 0;
+    display: inline;
+    width: 70%;
+    box-shadow: 0px 0px 16px 0px var(--dark);
+    margin: 2em;
+  }
+
+  .work-item img{
+    width: 100%;
+    height: 100%;
+  }
+
+/*Contact section*/
+.contact {
+    margin-top: 2em;
+    padding: 2em;
+    color: var(--light);
+    background-color: var(--dark);
+    text-align: center;
+    padding-bottom: 0px;
+}
+.contact-title {
+    font-size: 2em;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: .5em;
+}
+
+.contact-para {
+  text-align: justify;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin: auto;
+  margin-top: 2em;
+  padding: 0;
+  text-align: left;
+  font-size: 1.5em;
+  font-style: normal;
+  text-align: center;
+}
+
+.contact-icon{
+  margin: .5em auto;
+  font-size: 2rem;
+}
+
+.contact-link{
+  color: var(--light);
+}
+
+.copyright {
+  margin-top: 2.5em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape){
+   /* Header and Menu */
+    .icon {
+      display: block;
+    }
+
+    .menu{
+      max-height: 0;
+      background-color: #fff;
+      width: auto;
+    }
+    .menu a{
+      overflow-x: visible;
+      width: auto;
+      padding: .5em 2em;
+    }
+    .responsive {
+      max-height: 100%;
+      transition: max-height .5s ease-out;
+    }
+  /* Splash Section */
+  .splash{
+    height: 100vh;
+  }
+
+  .splash-title {
+    font-size: 6vw;
+  }
+
+  .splash-subtitle{
+    font-size: 3vw;
+    margin-top: .5em;
+  }
+
+  /* About Section */
+  .about {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    }
+
+    .about-header {
+      margin-top: 0;
+      width: 50%;
+      height: 50vh;
+      flex-flow: column-reverse nowrap;
+      float: left;
+    }
+
+    .about-title {
+      margin-top: 1em;
+    }
+
+    .about-para {
+      margin: 0 auto;
+      margin-left: 0;
+      width: 40%;
+      float: left;
+      padding-right: 5vw;
+      font-size: 1.5em;
+    }
+
+  /* Work Section */
+  .work-portfolio{
+    width: 80%;
+    margin: 2em auto;
+  }
+
+  .work-item {
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .work-item img {
+    width: 100%;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    background: var(--dark);
+    color: var(--light);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom .4s ease-out;
+    -moz-transition: bottom .4s ease-out;
+    -webkit-transition: bottom .4s ease-out;
+    padding: 0;
+    text-align: center;
+  }
+  figcaption a {
+    color: var(--light);
+  }
+    .work-item:hover figcaption {
+        bottom: 0;
+        padding: 1em;
+    }
+
+  .work-item:hover figcaption {
+    bottom: 0;
+  }
+
+>>>>>>> 0f497be3682fef49c3b17974cb1bed269e91a11d
+   a {
+        color: var(--light);
+    }
+
+  /* Contact Section */
+  .contact-para {
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+  }
+}

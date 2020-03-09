@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="author" content="Binyamin Green"/>
+    <meta name="description" content="Labyrinth Studios is a graphic design studio specializing in logo design. We are based out of Baltimore, Maryland in the heart of the frum, jewish community."/>
+    <meta name="keywords" content="Labyrinth Studios, Graphic Design, LS Graphic, Binyamin Green, LS Design, Labyrinth Studio, Binyamin, Graphic Design Baltimore, Design Baltimore, Logos, Logo Designer, Logo Design, Frum Designer, Frum Logo, Frum Logo Design, Portfolio"/>
+    <title>Docs | BinyaminGreen.com</title>
+    <link rel="stylesheet" type="text/css" href="assets/index.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/docs.css"/>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>    <script
+	      src="https://code.jquery.com/jquery-3.3.1.min.js"
+	      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	      crossorigin="anonymous"></script>
+				<script src="assets/script.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+	<header>
+	<img src="images/logo-white.png" alt="Labyrinth Studios" title="Labyrinth Studios" class="header-logo">
+	<a class="icon" onclick="showMenu()">
+	  <i class="fas fa-bars"></i></a>
+	</a>
+	</header>
+	<nav class="menu">
+		  <a href="index.html">Home</a>
+	      <a href="#about" class="scroll">About</a>
+          <a href="#sass" class="scroll">SASS</a>
+					<a href="#sql" class="scroll">mySQL</a>
+	</nav>
+	<main id="splash" class="splash">
+		<div class="overlay">
+				<div class="cta">
+					<h1 class= "splash-title">Developer Docs</h1>
+                    <h2 class= "splash-subtitle">See what you can learn.</h2>
+                    <p class="splash-desc">Here, you can find coding documentation which I have collected from around the internet. Languages currently include Sass and mySQL.</p>
+										<div class="splash-stickers">
+											<b class="splash-stickers-button"><i class="fas fa-database splash-icon"></i> MySQL</b>
+											<b class="splash-stickers-button"><i class="fab fa-sass splash-icon-sass"></i></b>
+										</div>
+							  </div>
+				<div>
+			</main>
+            <main id="about" class="about">
+                <div class="about-code">
+                    <figure class="about-code-icon">
+                        <i class="fas fa-code"></i>
+                    </figure>
+                    <p class="about-code-para">Find documentation on programming as I come across articles I enjoy.</p>
+                </div>
+            </main>
+					<main id="sass" class="sass">
+						<h1 class="doc-title-main">Sass</h1>
+						<h5 class="doc-source">Source: <a href="https://learn.freecodecamp.org/front-end-libraries/sass">freecodecamp.org</a></h5>
+						<article id="sass_0" class="sass_0 doc">
+							<h2 class="doc-title">What Is sass?</h2>
+							<p>Sass, or "Syntactically Awesome StyleSheets", is a language extension of CSS. It adds features that aren't available using basic CSS syntax. Sass makes it easier for developers to simplify and maintain the style sheets for their projects.</p>
+							<p>Sass can extend the CSS language because it is a preprocessor. It takes code written using Sass syntax, and converts it into basic CSS. This allows you to create variables, nest CSS rules into others, and import other Sass files, among other things. The result is more compact, easier to read code.</p>
+							<p>There are two syntaxes available for Sass. The first, known as SCSS (Sassy CSS) and used throughout these challenges, is an extension of the syntax of CSS. This means that every valid CSS stylesheet is a valid SCSS file with the same meaning. Files using this syntax have the .scss extension.</p>
+							<p>The second and older syntax, known as the indented syntax (or sometimes just "Sass"), uses indentation rather than brackets to indicate nesting of selectors, and newlines rather than semicolons to separate properties. Files using this syntax have the .sass extension.</p>
+						<hr/>
+						</article>
+					</main>
+			<main id="sql" class="sql">
+				<h1 class="doc-title-main">MySQL</h1>
+				<h5 class="doc-source">(Source: <a href= "https://www.codecademy.com/courses/learn-sql-manipulation/lessons/manipulation/exercises/manipulation-generalizations?action=resume_content_item&course_redirect=learn-sql">codecademy.org</a>)</h5>
+			<article id="sql-1" class="sql_1 doc">
+			<h2 class="doc-title">MANIPULATION</h2></hr>
+			<p>Congratulations! You've learned six commands commonly used to manage data stored in a relational database. What can we generalize so far?</p>
+			<p>SQL is a programming language designed to manipulate and manage data stored in relational databases.</p>
+			<p>A relational database is a database that organizes information into one or more tables.<br/>
+			   A table is a collection of data organized into rows and columns.<br/>
+				 A statement is a string of characters that the database recognizes as a valid command.
+			 	</p>
+			<ul>
+				<li><code>CREATE TABLE</code> creates a new table.</li>
+				<li><code>INSERT INTO</code> adds a new row to a table.</li>
+  			<li><code>ELECT</code> queries data from a table.</li>
+  			<li><code>UPDATE</code> edits a row in a table.</li>
+  			<li><code>ALTER TABLE</code> changes an existing table.</li>
+				<li><code>DELETE FROM</code> deletes rows from a table.</li>
+			</ul>
+			<hr/>
+		</article>
+		<article id="sql-2" class="sql-2 doc">
+			<h2 class="doc-title">QUERIES</h2>
+			<p>Congratulations!<br/>
+				We just learned how to query data from a database using SQL. We also learned how to filter queries to make the information more specific and useful.</p>
+			<p>Let's summarize:</p>
+			<ul>
+				<li><code>SELECT</code> is the clause we use every time we want to query information from a database.</li>
+				<li><code>AS</code> renames a column or table.</li>
+				<li><code>DISTINCT</code> return unique values.</li>
+				<li><code>WHERE</code> is a popular command that lets you filter the results of the query based on conditions that you specify.</li>
+				<li><code>LIKE</code> and <code>BETWEEN</code> are special operators.</li>
+				<li><code>AND</code> and <code>OR</code> combines multiple conditions.</li>
+				<li><code>ORDER BY</code> sorts the result.</li>
+				<li><code>LIMIT</code> specifies the maximum number of rows that the query will return.</li>
+				<li><code>CASE</code> creates different outputs.</li>
+		</ul>
+		<hr/>
+		</article>
+		</main>
+		<footer id="contact" class="contact">
+				<h2 class="contact-title">Contact Me</h2>
+						<p class="contact-para">Saw something you enjoyed? Email me your name, the service you provide and any time constraints, and I'll be happy to adapt the design to fit your needs. Or, I can create a new design based your personal preferences.</p>
+						<ul class="contact-list">
+							<a href="https://github.com/b3u" class="contact-link">
+								<li><i class="fab fa-github contact-icon"></i></li>
+								<li>b3u</li>
+							</a>
+								<a href="https://codepen.io/b3u" class="contact-link">
+									<li><i class="fab fa-codepen contact-icon contact-link" data-fa-transform="shrink-4x" data-fa-mask="fas fa-circle"></i></li>
+									<li>@b3u</li>
+								</a>
+								<a href="mailto:bgreen@oblivy.com" class="contact-link">
+									<li><i class="fas fa-envelope contact-icon"></i></li>
+									<li>bgreen@oblivy.com</li>
+								</a>
+						</ul>
+				<p id="copyright" class="copyright"></p>
+</footer>
+<script>
+	Copyright();
+</script>
+</body>
+</html>
